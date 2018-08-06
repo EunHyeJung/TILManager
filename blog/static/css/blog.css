@@ -1,51 +1,66 @@
+/**************************************
+STATIC LAYOUT CSS
+**************************************/
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+	width: 96%;
+}
+
+nav, section {
+  float: left;
+}
+
+nav {
+  width: 20%;
+  margin-right: 5px;
+}
+
+section {
+  width: 75%;
+}
+
+
+
+/**************************************
+CSS TO MAKE THE EXAMPLE LOOK PRETTY
+**************************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-
-}
-.page-header {
-    background-color: #2574A9;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+  background: #fff;
+  color: #000;
+  font-family: Helvetica;
+  margin: 0;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+header {
+  background: #2574A9;
+  color : #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+nav,
+section {
+  border: 2px solid #2574A9;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  text-align: left;
 }
 
-.content {
-    margin-left: 40px;
+header {
+  padding: 20px 0;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+nav, section {
+  padding: 200px 0;
 }
-
-.date {
-    color: #7285A5;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    padding-left: 15px;
-    margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
-

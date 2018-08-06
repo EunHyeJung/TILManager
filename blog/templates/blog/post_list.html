@@ -1,26 +1,35 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-    <head>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <title>Django blog</title>
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="">Django  Blog</a></h1>
-        </div>
+  {% extends 'blog/base.html' %}
+  {% block content %}
+    <nav>
+  	  {% for post in posts %}
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            function show_post_detail(pk) {
+                alert(pk);
+               $.ajax({
+                    type: 'GET',
+                    url: '/post/' + pk,
+                    dataType : 'json',
+                    success: function(response) {
+                        text = response[0].fields.text
+                        $('.contents').html(text);
+                    }
+               })
+            }
+        </script>
+      	  <div class = "post">
+              <div class = "date">
+                 {{ post.created_date }}
+              </div>
+              <h1> <a href= "javascript:show_post_detail({{post.pk}});"> {{ post.title}} </a></h1>
+              <!--<p> {{ post.text|linebreaksbr}} </p>-->
+              <hr/>
+          </div>
+      {% endfor %}
+    </nav>
+      <section>
+          <div class="contents">
 
-        {% for post in posts %}
-            <div class="post">
-                <div class="date">
-                    <p> created : {{ post.created_date }}</p>
-                </div>
-                <h1><a href = ""> {{ post.title }} </a></h1>
-                <p> {{ post.text | linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
+          </div>
+      </section>
+  {% endblock %}

@@ -8,7 +8,7 @@ STATIC LAYOUT CSS
 }
 
 header {
-	width: 96%;
+	width: 100%;
 }
 
 nav, section {
@@ -16,12 +16,14 @@ nav, section {
 }
 
 nav {
-  width: 20%;
   margin-right: 5px;
+  width: 21%;
+  height : 80%;
 }
 
 section {
-  width: 75%;
+  width: 70%;
+  height : 80%;
 }
 
 
@@ -51,7 +53,6 @@ header {
 }
 nav,
 section {
-  border: 2px solid #2574A9;
   margin-bottom: 10px;
   border-radius: 3px;
   text-align: left;
@@ -62,5 +63,31 @@ header {
 }
 
 nav, section {
-  padding: 200px 0;
+  padding: 50px 0;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: gray;
+    float: right;
+    font-size: 20pt;
+    margin-right : 10px;
+}
+
+.post-form {
+    margin-left : 20px;
+}
+
+.post-form textarea, .post-form input {
+    width: 80%;
+    margin-bottom : 10px;
+}
+
+
+.post-list {
+    margin-top : 10px;
+    padding-left : 15px;
+}
+
+.contents {
+    margin-left : 35px;
 }

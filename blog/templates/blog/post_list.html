@@ -1,14 +1,14 @@
-  {% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
   {% block content %}
     <nav>
+       <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
   	  {% for post in posts %}
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript">
             function show_post_detail(pk) {
-                alert(pk);
                $.ajax({
                     type: 'GET',
-                    url: '/post/' + pk,
+                    url: '/posts/' + pk,
                     dataType : 'json',
                     success: function(response) {
                         text = response[0].fields.text
@@ -21,7 +21,7 @@
               <div class = "date">
                  {{ post.created_date }}
               </div>
-              <h1> <a href= "javascript:show_post_detail({{post.pk}});"> {{ post.title}} </a></h1>
+              <h5> <a href= "javascript:show_post_detail({{post.pk}});"> {{ post.title}} </a></h5>
               <!--<p> {{ post.text|linebreaksbr}} </p>-->
               <hr/>
           </div>

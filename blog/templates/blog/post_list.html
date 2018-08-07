@@ -12,7 +12,7 @@
                     dataType : 'json',
                     success: function(response) {
                         text = response[0].fields.text
-                        $('.contents').html(text);
+                        $('.contents').html('<a class="btn btn-default" href="{% url 'post_detail'  pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> <p>' +text + '</p>');
                     }
                })
             }

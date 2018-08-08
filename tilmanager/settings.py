@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'til',
     'blog',
+    'social_django'
 ]
 
 MIDDLEWARE = [
@@ -114,6 +115,25 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+## authentication
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
+LOGIN_URL = '/'
+LOGIN_REDIRECT_URL = '/posts/list'
+LOGOUT_REDIRECT_URL = '/'
+
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+
+
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
 
 
 # Static files (CSS, JavaScript, Images)

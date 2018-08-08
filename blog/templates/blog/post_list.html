@@ -1,7 +1,17 @@
 {% extends 'blog/base.html' %}
   {% block content %}
     <nav>
+        {% if user.is_authenticated %}
+            <p>
+                USER_NAME :  {{ user.username }} <br/>
+                USER_EMAIL :  {{ user.email}}
+            </p>
+            <hr/>
+            <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+            <hr/>
+        {% endif %}
        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <p>　</p>
   	  {% for post in posts %}
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript">
@@ -11,8 +21,8 @@
                     url: '/posts/' + pk,
                     dataType : 'json',
                     success: function(response) {
-                        text = response[0].fields.text
-                        $('.contents').html('<a class="btn btn-default" href="{% url 'post_detail'  pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> <p>' +text + '</p>');
+                        contents = response[0].fields.text
+                        $('.contents').html('<a class="btn btn-default" href="{% url 'post_detail'  pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a> <p>' +contents + '</p>');
                     }
                })
             }

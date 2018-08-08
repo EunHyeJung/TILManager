@@ -1,5 +1,5 @@
 # TIL(Today I Learned) Manager   
-효율적인 학습관리를 위한 TO-DO-List + Memo 기능을 가진 웹 애플리케이션 구현현하며, Django를 학습합니다.  
+효율적인 학습관리를 위한 TO-DO-List + Memo 기능을 가진 웹 애플리케이션 구현하며, Django를 학습합니다.  
   
 - - -  
    

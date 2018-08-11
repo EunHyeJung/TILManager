@@ -1,0 +1,45 @@
+{% extends 'til/base.html' %}
+{% block content %}
+    <nav>
+
+
+        {% if user.is_authenticated %}
+            <p>
+                {{ user.}}
+                USER_NAME :  {{ user.username }} <br/>
+                USER_EMAIL :  {{ user.email}}
+            </p>
+            <hr/>
+            <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+            <hr/>
+        {% endif %}
+       <a href="{% url '" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <p>　</p>
+        <div class = "post-list">
+        {% for item in posts %}
+            <h4> <a href= "javascript:show_til_detail({{item.pk}});"> {{ item.created_date|date:"Y-m-d" }}　TIL</a></h4>
+        <hr/>
+        {% endfor %}
+        </div>
+    </nav>
+<section>
+    <div class = "contents">
+        <div id ="til">
+
+
+        </div>
+        <hr/>
+        <div id = "review">
+
+
+        </div>
+       <hr/>
+        <div id= "plan">
+
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

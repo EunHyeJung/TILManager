@@ -5,6 +5,11 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import UserForm
 
 # Create your views here.
+
+
+def index(request):
+    return redirect('/tils')
+
 def logout(request):
     auth.logout(request)
     return redirect('/')

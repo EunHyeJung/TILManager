@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c27d992-b47e-4f41-806e-44fd7efb15ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/authentication/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/til/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/til/static/css/til.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/til/static/js/til.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/til/templates/til/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/til/templates/til/til_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/templates/authentication/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/templates/authentication/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/templates/authentication/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0002_auto_20180807_1440.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0003_auto_20180807_1444.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0004_auto_20180809_2346.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/til/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/til/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/til/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/til/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/til/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/til/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/til/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/til/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/til/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/home/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tilmanager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tilmanager/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tilmanager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tilmanager/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,17 +32,17 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="5" />
-          <entry key="html" value="33" />
+          <entry key="html" value="35" />
           <entry key="js" value="2" />
-          <entry key="py" value="65" />
+          <entry key="py" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="HTML" value="33" />
+          <entry key="HTML" value="35" />
           <entry key="JavaScript" value="2" />
-          <entry key="Python" value="65" />
+          <entry key="Python" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -72,7 +50,7 @@
           <entry key="css" value="512" />
           <entry key="html" value="2158" />
           <entry key="js" value="1468" />
-          <entry key="py" value="3644" />
+          <entry key="py" value="3716" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -80,7 +58,7 @@
           <entry key="CSS" value="512" />
           <entry key="HTML" value="2158" />
           <entry key="JavaScript" value="1468" />
-          <entry key="Python" value="3644" />
+          <entry key="Python" value="3716" />
         </counts>
       </usages-collector>
     </session>
@@ -133,14 +111,43 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/til/models.py">
+            <entry file="file://$PROJECT_DIR$/authentication/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="551">
-                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="95">
+                  <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#0#37#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="43" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1533958028562" expanded="true" signature="134:291" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/authentication/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/authentication/templates/authentication/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -154,7 +161,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/til/views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="266">
@@ -179,8 +186,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="1" />
+                <state relative-caret-position="190">
+                  <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -192,8 +199,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/til/templates/til/til_list.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="589">
-                  <caret line="31" column="25" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="25" />
+                <state relative-caret-position="399">
+                  <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -256,7 +263,6 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/blog/templates/home/index.html" />
-        <option value="$PROJECT_DIR$/authentication/urls.py" />
         <option value="$PROJECT_DIR$/authentication/tests.py" />
         <option value="$PROJECT_DIR$/blog/static/css/blog.css" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
@@ -264,7 +270,6 @@
         <option value="$PROJECT_DIR$/til/forms.py" />
         <option value="$PROJECT_DIR$/authentication/templates/authentication/signup.html" />
         <option value="$PROJECT_DIR$/authentication/forms.py" />
-        <option value="$PROJECT_DIR$/authentication/views.py" />
         <option value="$PROJECT_DIR$/til/admin.py" />
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
@@ -278,6 +283,9 @@
         <option value="$PROJECT_DIR$/til/templates/til/til_list.html" />
         <option value="$PROJECT_DIR$/til/static/js/til.js" />
         <option value="$PROJECT_DIR$/til/views.py" />
+        <option value="$PROJECT_DIR$/authentication/urls.py" />
+        <option value="$PROJECT_DIR$/authentication/templates/authentication/index.html" />
+        <option value="$PROJECT_DIR$/authentication/views.py" />
       </list>
     </option>
   </component>
@@ -308,6 +316,24 @@
             <path>
               <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,34 +345,7 @@
             <path>
               <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
               <item name="til" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
-              <item name="til" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
-              <item name="til" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangoproj" type="462c0819:PsiDirectoryNode" />
-              <item name="til" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="djangoproj" type="b2602c69:ProjectViewProjectNode" />
@@ -487,13 +486,6 @@
     <entry file="file://$PROJECT_DIR$/blog/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authentication/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -505,20 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1843">
           <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentication/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -583,16 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -618,27 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/til/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/til/static/css/til.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="75" column="12" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -663,17 +614,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/til/templates/til/til_list.html">
+    <entry file="file://$PROJECT_DIR$/til/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/til/static/js/til.js">
+    <entry file="file://$PROJECT_DIR$/til/templates/til/til_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="399">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="7" lean-forward="true" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -685,6 +653,47 @@
             <element signature="e#0#64#0" expanded="true" />
             <marker date="1533968885751" expanded="true" signature="404:407" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/til/static/js/til.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication/templates/authentication/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentication/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -82,7 +82,6 @@ nav, section {
     margin-bottom : 10px;
 }
 
-
 .post-list {
     margin-top : 10px;
     padding-left : 15px;
@@ -107,15 +106,18 @@ nav, section {
    margin-right : 10px;
 }
 
-
-.form-horizontal input{
-    width : 500px;
-    margin-top : 10px;
+.component input{
+    width : 50%;
+    margin-bottom : 10px;
 }
+
 /*********************************************************/
 
 h4 {
     color:  #2574A9;
 }
 
-td.delete input { display: none; }
+.contents-head {
+    float : right;
+    margin-right : 30px;
+}

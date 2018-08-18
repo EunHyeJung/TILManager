@@ -5,6 +5,11 @@ function show_til_detail(pk) {
         contentType : 'application/json; charset=utf-8',
         success : function(response) {
             var data = response;
+            var html = '<a class="btn btn-default" href="{% url til_edit pk=item.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>';
+            var post_data = JSON.parse(response.post);
+            var post_pk = post_data[0].pk;
+            html += '<a href="javascript:delete_post('+ post_pk + ');" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></a>'
+            $('.contents-head').html(html);
 
             //console.log(data);
             var til_data = JSON.parse(response.tils);
@@ -39,8 +44,22 @@ function show_til_detail(pk) {
     })
 }
 /////////////////////////
-function submitAll() {
+function delete_post(pk) {
+    var r = confirm("확인을 누르면 해당 TIL이 삭제됩니다.")
+    if(r) {
+//        $.ajax({
+//            type : 'POST',
+//            url : '/tils/' + pk + '/delete',
+//            success : function(response) {
+//
+//            }
+//        })
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", '/tils/' + pk + '/delete', true);
+        xhttp.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+        xhttp.send();
 
+    }
 }
 
 

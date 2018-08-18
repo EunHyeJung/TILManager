@@ -6,6 +6,8 @@ from django.http import HttpResponse, JsonResponse
 import json
 from django.forms import formset_factory
 from til.forms import TilForm, ReviewForm, PlanForm, PostForm, TilInlineFormSet, ReviewInlineFormSet, PlanInlineFormSet
+from django.views.decorators.csrf import csrf_exempt
+
 
 # Create your views here.
 def til_list(request):
@@ -52,3 +54,16 @@ def til_detail(request, pk):
 
     # return HttpResponse(serializers.serialize("json", resultset), content_type="application/json")
     return HttpResponse(json.dumps(response_data, ensure_ascii=False), content_type="application/json;charset=utf-8")
+
+def til_edit(request, pk):
+    posts = Post.objects.all()
+    return render(request, 'til/til_list.html', {
+        'posts': posts
+    })
+
+@csrf_exempt
+def til_delete(request, pk):
+    post = Post.objects.get(pk=pk)
+    r = post.delete()
+    print(pk)
+    return redirect('/tils')

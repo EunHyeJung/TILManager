@@ -31,7 +31,7 @@ TilInlineFormSet = inlineformset_factory(Post, Til,
                                            fields=[ 'item', ], extra=2)
 
 ReviewInlineFormSet = inlineformset_factory(Post, Review,
-                                           fields=[ 'item', ], extra=2)
+                                           fields=[ 'item', ], extra=1)
 
 PlanInlineFormSet = inlineformset_factory(Post, Plan,
                                            fields=[ 'item', ], extra=2)

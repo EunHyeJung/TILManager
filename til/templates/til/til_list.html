@@ -13,7 +13,7 @@
             <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
             <hr/>
         {% endif %}
-       <a href="{% url '" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+       <a href="{% url 'til_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         <p>　</p>
         <div class = "post-list">
         {% for item in posts %}
@@ -39,7 +39,5 @@
         </div>
     </div>
 </section>
-
-
 
 {% endblock %}

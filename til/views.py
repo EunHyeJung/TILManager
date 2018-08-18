@@ -4,6 +4,8 @@ from .models import Til, Review, Plan, Post
 from django.core import serializers
 from django.http import HttpResponse, JsonResponse
 import json
+from django.forms import formset_factory
+from til.forms import TilForm, ReviewForm, PlanForm, PostForm, TilInlineFormSet, ReviewInlineFormSet, PlanInlineFormSet
 
 # Create your views here.
 def til_list(request):
@@ -13,6 +15,28 @@ def til_list(request):
     })
 
 
+def til_new(request):
+    if request.method == 'POST':
+        post = Post()
+        post.author = request.user
+        post.save()
+        til_formset = TilInlineFormSet(request.POST,  request.FILES, instance=post)
+        review_formset = ReviewInlineFormSet(request.POST, request.FILES, instance=post)
+        plan_formset = PlanInlineFormSet(request.POST, request.FILES, instance=post)
+        if til_formset.is_valid():
+            til_formset.save()
+        if review_formset.is_valid():
+            review_formset.save()
+        if plan_formset.is_valid():
+            plan_formset.save()
+        return redirect('/tils')
+    else:
+        til_formset = TilInlineFormSet()
+        review_formset = ReviewInlineFormSet()
+        plan_formset = PlanInlineFormSet()
+        return render(request, 'til/til_new.html', { 'til_formset': til_formset,
+                                                     'review_formset' : review_formset,
+                                                     'plan_formset' : plan_formset})
 
 
 def til_detail(request, pk):

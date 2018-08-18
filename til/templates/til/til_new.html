@@ -1,0 +1,43 @@
+{% extends 'til/base.html' %}
+{% block content %}
+
+<p>
+<h3> <script> document.write(new Date().toLocaleDateString()); </script> TIL </h3>
+
+</p>
+<hr/>
+
+<form method = "POST" class = "form-horizontal"> {% csrf_token %}
+    <h3> 오늘 한 일 </h3>
+    {{ til_formset.management_form }}
+    <table>
+        {% for form in til_formset %}
+            {% for field in form %}
+                {{ field }} </br>
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <hr/>
+    <h3> 느낀점 </h3>
+     {{ review_formset.management_form }}
+    <table>
+        {% for form in review_formset %}
+            {% for field in form %}
+                {{ field }} </br>
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <hr/>
+    <h3> 내일 할 일 </h3>
+    {{ plan_formset.management_form }}
+    <table>
+        {% for form in review_formset %}
+            {% for field in form %}
+                {{ field }} </br>
+            {% endfor %}
+        {% endfor %}
+    </table>
+    <hr/>
+      <button type = "submit" class="save btn btn-default">Save</button>
+</form>
+{% endblock %}
